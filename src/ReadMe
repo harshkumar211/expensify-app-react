@@ -1,0 +1,35 @@
+use of babel and live-server
+compile using Babel
+    1. babel src/app.js --out-file public/scripts/app.js --presets=env,react --watch
+
+
+//JSX does not have inbuild data-binding
+
+//React component is ES6 class
+//component props for communication among component
+//Key is  a special attribute which does not get passed to other component. 
+
+bind is the way to reattach the context to the function. this is really inefficient
+so we will use constructor. 
+
+there are two ways to create components
+1. class components
+2.stateless functional components
+
+defaultProps is the way to send the default value to the component.
+LCM methods:
+    componentDidMount
+    componentWillUnmount -- to verify "ReactDOM.render(React.createElement('p'),document.getElementById('app'));"
+    componentDidUpdate
+Webpack: asset bundler
+
+//Installing module locally is prefered way. to use them after installing locally,
+we can use package.json under scripts tags and run the below command
+yarn run serve
+
+
+inline nesting of jsx can be done. 
+
+scss: uses the semicolon and curly braces
+sass: no semicolon, no braces
+
